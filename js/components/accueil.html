@@ -1,0 +1,13 @@
+<main class="accueil">
+
+    <div class="conteneur">
+        <h1>Méteo LoLo</h1>
+        <h1>Rentrez les informations</h1>
+        <form @submit.prevent="GetInfo" name="form_info" action="#js" method="post">
+            <div><input type="text" v-model="ville" name="ville" placeholder="Ville"></div>
+            <div><input type="text" v-model="pays" name="pays" placeholder="Code du pays"></div>
+            <div><input type="submit" value="Envoyer"></div>
+        </form>
+    </div>
+
+</main>

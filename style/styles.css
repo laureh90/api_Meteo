@@ -1,0 +1,168 @@
+body {
+  margin: 0px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+main.accueil {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90% 60%;
+  height: 100vh;
+}
+
+main.accueil .conteneur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.accueil .conteneur h1 {
+  color: white;
+  margin: 0px;
+}
+
+main.accueil .conteneur form {
+  margin-top: 70px;
+  padding: 80px;
+  border: 2px solid white;
+  -webkit-box-shadow: 2px 2px 30px 10px white;
+          box-shadow: 2px 2px 30px 10px white;
+}
+
+main.accueil .conteneur form input[type='text'] {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+main.accueil .conteneur form input[type='submit'] {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+main.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/nuage-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 90% 60%;
+  background-size: cover;
+  height: 100vh;
+}
+
+main.info .conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.info .conteneur .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.596);
+  background-color: rgba(228, 227, 227, 0.116);
+  width: 100%;
+}
+
+main.info .conteneur .name h2 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+main.info .conteneur .name h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+main.info .conteneur .info_meteo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  background-color: rgba(228, 227, 227, 0.068);
+}
+
+main.info .conteneur .info_meteo .description {
+  text-align: center;
+  background-color: rgba(228, 227, 227, 0.116);
+}
+
+main.info .conteneur .info_meteo .description img {
+  width: 100px;
+  height: 100px;
+}
+
+main.info .conteneur .info_meteo .soleil {
+  text-align: center;
+  margin: 0px;
+}
+
+main.info .conteneur .info_meteo .soleil img {
+  width: 300px;
+  margin: 30px;
+}
+
+main.info .conteneur .accueil {
+  margin-top: 30px;
+}
+
+main.info .conteneur .accueil a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  background-color: rgba(245, 245, 245, 0.623);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+main.info .conteneur .accueil a:hover {
+  color: #232324;
+  background-color: rgba(255, 255, 255, 0.712);
+}
+/*# sourceMappingURL=styles.css.map */

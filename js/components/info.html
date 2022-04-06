@@ -1,0 +1,44 @@
+<main class="info">
+
+    <div v-if="meteo != null" class="conteneur">
+        <div class="name">
+            <h2>{{ propinfos[0].name }} | {{ propinfos[0].country }} </h2>
+        </div>
+        <div class="info_meteo">
+            <div class="description">
+                <p>{{ meteo.weather[0].description[0].toUpperCase()+ meteo.weather[0].description.substring(1) }} </p>
+                <img :src="`http://openweathermap.org/img/wn/${meteo.weather[0].icon}@2x.png`" alt="">
+                <div class="temperature">
+                    {{ meteo.main.temp }}
+                    <p> T ressenti {{ meteo.main.feels_like }}</p>
+                </div>
+                <div class="vent">
+                    <p> Force du vent : {{ meteo.wind.speed }} km/h</p>
+                    <p>Direction du vent : <br> {{ meteo.wind.deg }} </p>
+                </div>
+            </div>
+
+            <div class="soleil">
+                <div class="heure">
+                    <p>Fuseau Horaire : {{ meteo.timezone }} h</p>
+                </div>
+                <p>Lever du soleil : {{ meteo.sys.sunrise }} </p>
+                <p>Coucher du soleil : {{ meteo.sys.sunset }} </p>
+                <p v-if="meteo.rain != undefined ">Precipitation de pluie : {{ meteo.rain['1h'] }} mm </p>
+                <p v-if="meteo.snow != undefined ">Précipitation de neige : {{ meteo.snow['1h'] }} mm </p>
+                <img src="https://media.giphy.com/media/Zcizf1vOY6nXrPtLyD/giphy.gif" alt="">
+            </div>
+        </div>
+        <div class="accueil" @click="$root.changerPage('accueil')">
+            <a href="">Retour à l'accueil</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</main>
